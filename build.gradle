@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.myname'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11 // or your preferred version
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Add dependencies here
+}
+
+application {
+    mainClass = 'com.szymon.gameboy.Emu' // Replace with your actual class
+}
